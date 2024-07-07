@@ -44,7 +44,7 @@ a {
   color: black;
   border-radius: 20px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
   padding: 10px 10px;
@@ -312,10 +312,14 @@ nav li a:hover {
   padding: 50px;
 }
 
+.container-price h2 {
+  font-family: "Euclid Circular A", "Poppins";
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 .container-price button {
   font-family: "Euclid Circular A", "Poppins";
   font-size: 16px;
-  font-weight: 600;
   padding: 10px;
   margin-top: 10px;
   background-color: #eeeeee;
@@ -428,7 +432,7 @@ nav li a:hover {
   /* flex-direction: column; */
   margin: 10px 0;
   /* border: 1px solid black; */
-  gap : 10px;
+  gap: 10px;
 }
 
 .contact-info {
@@ -459,174 +463,113 @@ footer {
 }
 
 /* RESPONSIVE CSS FOR MOBILE */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
   .logo-container {
-    padding-left: 2px;
-    font-size: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
   }
 
   nav ul {
-    gap: 2px;
-    flex-direction: row;
-    padding-right: 5px;
+    /* flex-direction: column; */
+    padding-right: 0;
+    font-size: 12px;
+    gap: 10px;
   }
 
-  nav li,
-  a {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
-
-  /* MAIN / PAGE 1*/
   .main-page {
-    height: 80vh;
-    padding: 20px 25px;
-    display: flex;
     flex-direction: column;
-  }
-
-  .main-image {
-    width: 90%;
+    height: auto;
+    padding: 20px;
   }
 
   .main-banner {
     padding-right: 0;
+    text-align: center;
   }
 
   .main-banner h2 {
-    font-size: 24px;
+    font-size: 32px;
   }
 
-  .main-banner-text {
-    font-size: 16px;
-  }
-
-  .logo-button {
-    margin-top: 10px;
-    padding: 8px 16px;
-  }
-
-  /* CONTENT / PAGE 2*/
   .content {
-    height: 90vh;
-    padding: 35px 20px;
-    display: flex;
     flex-direction: column;
-  }
-
-  .content h2 {
-    font-size: 24px;
-  }
-
-  .content-title h2 {
-    font-size: 20px;
-  }
-
-  .content p {
-    padding-top: 20px;
-    font-size: 16px;
-  }
-
-  .button-explore {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 0 20px;
   }
 
   .carousel {
     width: 100%;
-    margin: 0;
   }
 
-  .swiper-button {
-    padding: 8px 16px;
-    font-size: 14px;
+  /* PAGE 3 */
+  .container-price {
+    margin-top: 120px;
   }
 
-  .swiper-pagination {
-    bottom: 10px !important;
+  .container-price h2 {
+    font-family: "Euclid Circular A", "Poppins";
+    text-align: center;
   }
 
-  /* ARTICLE / PAGE 3 */
-  .info {
-    height: 80vh;
-    display: flex;
+  .car-list {
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .info-discord {
-    margin-left: -60px;
-    padding-right: 20px;
+  .car-item {
+    flex: 0 0 calc(50% - 10px); /* 50% minus margin to accommodate 2 items in a row */
+    margin-bottom: 20px;
   }
 
-  .info-discord h2 {
-    font-size: 25px;
+  /* Positioning specific cars in their respective rows */
+  .car-item:nth-child(1),
+  .car-item:nth-child(2) {
+    /* First row: stargazer and avanza */
+    flex-basis: 100%; /* Full width for both items in the first row */
   }
 
-  .profile-card h2 {
-    margin-left: -60px;
+  .car-item:nth-child(3),
+  .car-item:nth-child(4) {
+    /* Second row: xl7 and cx5 */
+    flex-basis: 100%; /* Full width for both items in the second row */
   }
 
-  .profile img {
-    width: 40%;
-    justify-content: center;
-    align-items: center;
+  /* CONTACT */
+  .contact {
+    margin-top: 100px;
   }
 
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    width: 100%;
-    height: auto;
+  .contact h2 {
+    margin-bottom: 20px;
   }
 
-  .main-page {
-    height: 60vh;
-  }
-
-  .info {
-    height: 60vh;
+  .contact-info {
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90%;
   }
 
-  .info-discord {
-    width: 100%;
+  .contact-info h4 {
+    margin: 20px 0;
+    text-align: center;
   }
 
-  .info-discord h2 {
-    padding-top: 10px;
-  }
-
-  .info-discord p {
-    margin-bottom: -10px;
-  }
-
-  .paragrafDeleteMobile {
-    display: none;
-  }
-
-  .profile {
-    padding-top: 20px;
-    width: 100%;
-    display: flex;
-    margin-right: 100px;
-  }
-
-  .profile h2 {
-    margin: auto;
-  }
-
-  .profile img {
-    padding-top: 0px;
+  .content-title {
+    margin-top: 40px;
   }
 
   footer {
-    position: fixed;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
   }
 }
