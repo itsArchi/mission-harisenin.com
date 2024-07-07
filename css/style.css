@@ -496,9 +496,18 @@ footer {
     font-size: 32px;
   }
 
+  .main-banner p {
+    text-align: justify;
+  }
+
+  /* PAGE 2 */
   .content {
     flex-direction: column;
     padding: 0 20px;
+  }
+
+  .main-banner-text {
+    text-align: justify;
   }
 
   .carousel {
@@ -513,6 +522,10 @@ footer {
   .container-price h2 {
     font-family: "Euclid Circular A", "Poppins";
     text-align: center;
+  }
+
+  .pricing-tag {
+    margin-top: 100px;
   }
 
   .car-list {
@@ -554,6 +567,7 @@ footer {
     align-items: center;
     position: relative;
     width: 90%;
+    margin-top: 260px;
   }
 
   .contact-info h4 {
@@ -561,6 +575,10 @@ footer {
     text-align: center;
   }
 
+  .contact-info p {
+    text-align: justify;
+  }
+  
   .content-title {
     margin-top: 40px;
   }
