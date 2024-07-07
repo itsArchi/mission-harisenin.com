@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobilmurah.id</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assest/logo.png" type="png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img class="logo" src="./assest/logo.png" alt="logo" height="60px" />
+        <span style="font-size: 0px; padding-left: 10px">Mobilmurah.id</span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#firstParallax">Home</a>
+          </li>
+          <li>
+            <a href="#secondParallax">Tentang Kami</a>
+          </li>
+          <li>
+            <a href="#thirdParallax">Harga</a>
+          </li>
+          <li>
+            <a href="#fourthParallax">Kontak</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="firstParallax" class="first parallax">
+        <div class="main-page">
+          <div class="main-image">
+            <img
+              src="./assest/rentcar.png"
+              alt="rentcar-background"
+              class="main-image"
+            />
+          </div>
+          <div class="main-banner">
+            <h2>MOBILMURAH.ID</h2>
+            <h4>est TADI PAGI</h4>
+            <p class="main-banner-text">
+              Tempat mobil bekas dengan kualitas terbaik dan harga yang
+              terjangkau. MOBILMURHA.ID memiliki misi untuk membawa industri
+              mobil bekas ke era digital dengan membangun dan mengangkat
+              pengalaman dalam menjual dan membeli mobil.
+            </p>
+            <p class="main-banner-text-bottom">Cari mobil sekarang!</p>
+            <div class="button-join">
+              <!-- <a href="#fourthParallax" class="logo-button">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="text">Hubungi Kami</p>
+                        </a> -->
+              <button onclick="goto('chat')" class="logo-button">
+                <i class="fa-solid fa-phone"></i>Hubungi Kami
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="secondParallax" class="second parallax">
+        <div class="content">
+          <div>
+            <h2 class="content-title">Tentang MOBILMURAH.ID</h2>
+            <p>
+              Sejak tadi pagi dibuat dan dikembangkan, MOBILMURAH.ID merupakan
+              perusahaan penjualan mobil bekas. Dengan berbagai macam merk dan
+              tipe mobil, kami akan membantu anda menemukan mobil yang sesuai
+              dengan kebutuhan anda.
+              <br />
+              <br />
+              MOBILMURAH.ID menyediakan mobil bekas terbaik dengan harga
+              terjangkau. Eksplorasi dan temukan mobil terbaikmu di
+              MOBILMURAH.ID.
+            </p>
+            <button class="button-explore" onclick="goto('find')">
+              Cari Mobil Bekas
+            </button>
+          </div>
+          <div class="carousel">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                  <div>
+                    <h2>Toyota</h2>
+                    <button class="swiper-button" onclick="goto('toyota')">
+                      Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                  <div>
+                    <h2>Daihatsu</h2>
+                    <button class="swiper-button" onclick="goto('daihatsu')">
+                      Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--three">
+                  <div>
+                    <h2>Hyundai</h2>
+                    <button class="swiper-button" onclick="goto('hyundai')">
+                      Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--four">
+                  <div>
+                    <h2>Mitsubishi</h2>
+                    <button class="swiper-button" onclick="goto('mitsubishi')">
+                      Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--five">
+                  <div>
+                    <h2>Suzuki</h2>
+                    <button class="swiper-button" onclick="goto('suzuki')">
+                      Selengkapnya
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--six">
+                  <div>
+                    <h2>Mazda</h2>
+                    <button class="swiper-button" onclick="goto('mazda')">
+                      Selengkapnya
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="thirdParallax" class="third parallax">
+        <div class="container-price">
+          <div class="pricing-tag">Stock mobil saat ini di MOBILMURAH.ID</div>
+          <!-- <div class="list-menu">
+            <a href="#" id="all">SEMUA</a>
+            <a href="#" id="toyota">TOYOTA</a>
+            <a href="#" id="daihatsu">DAIHATSU</a>
+            <a href="#" id="hyundai">HYUNDAI</a>
+            <a href="#" id="mitsubishi">MITSUBISHI</a>
+            <a href="#" id="suzuki">SUZUKI</a>
+            <a href="#" id="mazda">MAZDA</a>
+          </div> -->
+          <div class="car-list">
+            <div class="car-item">
+              <img src="./assest/car-list/stargazer.png" alt="stargazer" />
+              <h3>Stargazer</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 232.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/avanza.png" alt="avanza" />
+              <h3>Avanza</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 150.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/xl7.png" alt="xl7" />
+              <h3>XL7</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 190.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/cx5.png" alt="cx5" />
+              <h3>CX5</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 320.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/zenix.png" alt="zeniv" />
+              <h3>Innova Zenix</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 458.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/xenia.png" alt="xenia" />
+              <h3>Xenia</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 131.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/ertiga.png" alt="ertiga" />
+              <h3>Ertiga</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 145.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/calya.png" alt="calya" />
+              <h3>Calya</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 110.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/creta.png" alt="creta" />
+              <h3>Creta</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 210.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/sigra.png" alt="sigra" />
+              <h3>Sigra</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 120.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <!-- <div class="car-item">
+              <img src="./assest/car-list/xpander.png" alt="xpander" />
+              <h3>Xpander</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 180.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/xpander.png" alt="xpander" />
+              <h3>Xpander</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 1.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/xpander.png" alt="xpander" />
+              <h3>Xpander</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 1.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/xpander.png" alt="xpander" />
+              <h3>Xpander</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 1.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div>
+            <div class="car-item">
+              <img src="./assest/car-list/xpander.png" alt="xpander" />
+              <h3>Xpander</h3>
+              <p>Harga Mulai</p>
+              <p class="price">Rp. 1.000.000</p>
+              <button onclick="linkChat()">Pesan Sekarang</button>
+            </div> -->
+          </div>
+          <h2>dan Masih Banyak yang Lainnya </h2>
+          <button onclick="linkChat()">Pesan Sekarang</button>  
+
+          <!-- <div class="car-list" id="daihatsu"></div>
+          <div class="car-list" id="hyundai"></div>
+          <div class="car-list" id="mitsubishi"></div>
+          <div class="car-list" id="suzuki"></div>
+          <div class="car-list" id="mazda"></div> -->
+        </div>
+      </div>
+
+      <div id="fourthParallax" class="fourth parallax">
+        <div class="contact">
+          <div class="contact-info">
+            <h4>Temukan Mobilmu Sekarang</h4>
+            <button class="button-explore" onclick="linkChat()">
+              Cari Mobil Bekas
+            </button>
+            <h2 class="content-title">Hubungi kami di :</h2>
+            <div>
+              <i class="fa-brands fa-facebook" style="color: #000000"
+                >Mobilmurah ID</i
+              >
+              <i class="fa-brands fa-whatsapp" style="color: #000000"
+                >+628123456789</i
+              >
+              <p>Call center kami akan melayani anda 24/7 dengan senang hati melayani semua kebutuhan anda mencari mobil yang terbaik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Created by Noer Rohim, harisenin.com SIM-K FSD Participant &#169; 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
