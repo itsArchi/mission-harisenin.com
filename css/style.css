@@ -534,21 +534,18 @@ footer {
   }
 
   .car-item {
-    flex: 0 0 calc(50% - 10px); /* 50% minus margin to accommodate 2 items in a row */
+    flex: 0 0 calc(50% - 10px);
     margin-bottom: 20px;
   }
 
-  /* Positioning specific cars in their respective rows */
   .car-item:nth-child(1),
   .car-item:nth-child(2) {
-    /* First row: stargazer and avanza */
-    flex-basis: 100%; /* Full width for both items in the first row */
+    flex-basis: 100%;
   }
 
   .car-item:nth-child(3),
   .car-item:nth-child(4) {
-    /* Second row: xl7 and cx5 */
-    flex-basis: 100%; /* Full width for both items in the second row */
+    flex-basis: 100%;
   }
 
   /* CONTACT */
@@ -578,7 +575,7 @@ footer {
   .contact-info p {
     text-align: justify;
   }
-  
+
   .content-title {
     margin-top: 40px;
   }
